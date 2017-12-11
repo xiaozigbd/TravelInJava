@@ -3,8 +3,6 @@ package util;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.CountDownLatch;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 
 /**
  * 同步辅助类
@@ -23,8 +21,8 @@ public class CountDownLatchDemo {
 	}
 
 	public static void threadPool(){
-		ExecutorService fixedThreadPool = Executors.newFixedThreadPool(3);
-		Worker worker1=new Worker("zhang san", 5000, latch);
+//		ExecutorService fixedThreadPool = Executors.newFixedThreadPool(3);
+//		Worker worker1=new Worker("zhang san", 5000, latch);
 
 	}
 
