@@ -17,18 +17,17 @@ import java.io.InputStream;
 public class FileUtil {
     public static void main(String[] args) throws IOException {
         InputStream inputStream = new FileInputStream(new File("E:\\下载\\测试\\号码状态更新模板.xlsx"));
-        copyFile(inputStream, "hello.xlsx", "E:\\下载\\toDir\\");
+        copyFile(inputStream, "E:\\下载\\toDir\\hello.xlsx");
     }
 
     /**
      * 复制文件到指定目录
      * @param is
-     * @param fileName
-     * @param path
+     * @param destFileName
      * @throws IOException
      */
-    public static void copyFile(InputStream is, String fileName, String path) throws IOException {
-        FileOutputStream fileOutputStream = new FileOutputStream(new File(path + fileName));
+    public static void copyFile(InputStream is, String destFileName) throws IOException {
+        FileOutputStream fileOutputStream = new FileOutputStream(new File(destFileName));
         StreamUtils.copy(is, fileOutputStream);
     }
 
