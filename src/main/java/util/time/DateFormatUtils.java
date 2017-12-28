@@ -1,4 +1,4 @@
-package util;
+package util.time;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
