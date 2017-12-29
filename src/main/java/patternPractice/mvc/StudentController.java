@@ -1,5 +1,7 @@
 package patternPractice.mvc;
 
+import patternPractice.core.Student;
+
 public class StudentController {
    private Student model;
    private StudentView view;
@@ -17,11 +19,11 @@ public class StudentController {
       return model.getName();     
    }
 
-   public void setStudentRollNo(String rollNo){
+   public void setStudentRollNo(Integer rollNo){
       model.setRollNo(rollNo);       
    }
 
-   public String getStudentRollNo(){
+   public Integer getStudentRollNo(){
       return model.getRollNo();     
    }
 
