@@ -120,7 +120,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>mongo.MongoTest</mainClass>
+                            <mainClass>workScripts.zhiren.MongoTest</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
