@@ -18,6 +18,19 @@
 
     <dependencies>
         <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>23.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.38</version>
+        </dependency>
+
+        <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpclient</artifactId>
             <version>4.5.2</version>
@@ -120,7 +133,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>workScripts.zhiren.MongoTest</mainClass>
+                            <mainClass>workScripts.zhiren.RefreshPhoneStatus</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
