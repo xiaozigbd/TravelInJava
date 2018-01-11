@@ -18,8 +18,8 @@ import java.util.List;
 
 
 /**
- * Created by yangzhi on 2018/1/10.
  * 遍历mysql数据库的电话号码，从mongo中取得电话状态，然后更新到mysql中
+ * 关键字：mongo,mysql
  * @author yangzhi
  */
 public class RefreshPhoneStatus {

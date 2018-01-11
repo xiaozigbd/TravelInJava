@@ -9,7 +9,8 @@ import util.time.DateUtil;
 import java.util.Date;
 
 /**
- * Created by yangzhi on 2017/11/23.
+ * 更新所有标志位
+ * 关键字：mongo
  */
 public class RefreshAllToFlagOne {
     /**

@@ -16,6 +16,10 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+/**
+ * 脚本介绍：从一个集合处理一下到另一个集合
+ * 关键字：mongo
+ */
 public class MongoTest
 {
     private  static MongoCollection<Document> oldCollection;
