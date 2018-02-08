@@ -17,11 +17,6 @@
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>org.apache.httpcomponents</groupId>
-            <artifactId>httpclient</artifactId>
-            <version>4.5.2</version>
-        </dependency>
 
         <dependency>
             <groupId>joda-time</groupId>
@@ -42,23 +37,6 @@
             <scope>test</scope>
         </dependency>
 
-        <dependency>
-            <groupId>org.mongodb</groupId>
-            <artifactId>mongo-java-driver</artifactId>
-            <version>3.3.0</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.mongodb</groupId>
-            <artifactId>mongodb-driver-core</artifactId>
-            <version>3.3.0</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.mongodb</groupId>
-            <artifactId>bson</artifactId>
-            <version>3.3.0</version>
-        </dependency>
 
         <dependency>
             <groupId>org.apache.maven.plugins</groupId>
@@ -66,18 +44,6 @@
             <version>3.1.0</version>
         </dependency>
 
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
-            <version>${org.springframework-version}</version>
-            <exclusions>
-                <!-- Exclude Commons Logging in favor of SLF4j -->
-                <exclusion>
-                    <groupId>commons-logging</groupId>
-                    <artifactId>commons-logging</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
 
     </dependencies>
 
@@ -120,7 +86,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>mongo.MongoTest</mainClass>
+                            <mainClass>helloworld.Helloworld</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
@@ -150,12 +116,6 @@
                     <include>**/*.xml</include>
                 </includes>
             </resource>
-            <!--
-            <resource>
-                <directory>${profile.dir}</directory>
-                <filtering>true</filtering>
-            </resource>
-            -->
         </resources>
     </build>
 
