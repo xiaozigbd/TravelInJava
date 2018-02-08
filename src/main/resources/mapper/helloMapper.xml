@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 命名空间mapper：com.model.professional -->
+<mapper namespace="com.model.professional">
+    <select id="selectUserById" parameterType="int" resultType="professional">
+        <!-- 底层的SQL语句 -->
+        select * from PROFESSIONAL_INFOTB where PROFESSIONAL_ID=#{PROFESSIONAL_ID}
+    </select>
+</mapper>
